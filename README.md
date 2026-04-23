@@ -14,5 +14,5 @@ CS sophomore at UMBC (Dec '27) · AI/ML · Always building something
 Python · C · JavaScript · React · JavaScript · Android Studio · C++
 
 ### 📌 Featured Work
-- **[Campusly](#)** — [add one line about what it does]
-- **[Visionary](#)** — AI-powered project built in 36 hours at Bitcamp 2025
+- **[Campusly](https://github.com/Saumya-patel-31/Campusly)** — Social network dedicated to specific campuses. Need to upgrade your college network? Go join campusly.us
+- **[Visionary](https://github.com/Saumya-patel-31/Visionary)** — AI-powered website that describes your frontal surroundings. (Built to help blind people navigate properly).

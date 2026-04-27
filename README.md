@@ -10,6 +10,7 @@ or a full-stack app — I care about the craft.
 - 🌱 Currently exploring **AI/ML, Android development, and full-stack systems**
 - 🤝 Open to **internships, research roles, and interesting collabs**
 - 📫 Let's connect → **[linkedin.com/in/saumya31](https://linkedin.com/in/saumya31)**
+- 🌍 Step into my world → **[saumya.world](https://saumya.world)**
 
 ---
 

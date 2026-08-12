@@ -1,25 +1,59 @@
-# Hi, I'm Saumya 👋
-### CS Student @ UMBC · Building at the intersection of AI and real-world impact
+# Saumya-patel-31
 
-I'm a sophomore at the University of Maryland, Baltimore County (graduating Dec 2027),
-passionate about creating software that people actually use. Whether it's an AI model
-or a full-stack app — I care about the craft.
+> Memorable developer positioning.
 
-- 🔭 Currently building **[Campusly](https://github.com/Saumya-patel-31/Campusly)** — a campus social & events platform connecting students to what's happening around them
-- 🚀 Built **[Visionary](https://github.com/Saumya-patel-31/Visionary)** at **Bitcamp 2025** — an AI-powered app in 36 hours
-- 🌱 Currently exploring **AI/ML, Android development, and full-stack systems**
-- 🤝 Open to **internships, research roles, and interesting collabs**
-- 📫 Let's connect → **[linkedin.com/in/saumya31](https://linkedin.com/in/saumya31)**
-- 🌍 Step into my world → **[saumya.world](https://saumya.world)**
+**Theme:** GitHub · **Style:** Creative · **Agent:** Full-Stack Engineer
 
----
+## Header
+Hi, I'm **Saumya-patel-31**. This README is tuned for **personal brand** with a GitHub visual system.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=Saumya-patel-31&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/hero?username=Saumya-patel-31&theme=github-dark" alt="Saumya-patel-31 hero section" />
+  </picture>
+</p>
+## About Me
+Shapes the short profile story and positioning.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/about?username=Saumya-patel-31&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/about?username=Saumya-patel-31&theme=github-dark" alt="Saumya-patel-31 about section" />
+  </picture>
+</p>
+## Skills
+Selected stack and skill badges will be generated from the GitHub profile and README strategy.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=Saumya-patel-31&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/stack?username=Saumya-patel-31&theme=github-dark" alt="Saumya-patel-31 stack section" />
+  </picture>
+</p>
+## GitHub Stats
+> Editing this section in the inspector.
+GitSkins stat widgets will use the **GitHub** theme.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=Saumya-patel-31&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/stats?username=Saumya-patel-31&theme=github-dark" alt="Saumya-patel-31 stats section" />
+  </picture>
+</p>
+## Projects
+Highlights repositories as proof of work.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=Saumya-patel-31&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/projects?username=Saumya-patel-31&theme=github-dark" alt="Saumya-patel-31 projects section" />
+  </picture>
+</p>
+## Heatmap
+Animated year-long contribution calendar.
+## Connect
+Contact and social links will appear here.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=Saumya-patel-31&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=Saumya-patel-31&theme=github-dark" alt="Saumya-patel-31 social section" />
+  </picture>
+</p>
 
-### 🛠 Tech Stack
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat)
-![C](https://img.shields.io/badge/-C-A8B9CC?logo=c&logoColor=white&style=flat)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
-![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=flat)
-![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=flat)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black&style=flat)
-![Android](https://img.shields.io/badge/-Android-3DDC84?logo=android&logoColor=white&style=flat)
-![C++](https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white&style=flat)
+<!-- Sections: Header, About Me, Skills, GitHub Stats, Projects, Heatmap, Connect -->

@@ -4,16 +4,31 @@ from dataclasses import dataclass, field
 
 LOGIN = "Saumya-patel-31"
 NAME = "Saumya Patel"
-ROLE = "Software Engineer · AI/ML · Cloud"
+ROLE = "(Aspiring) SWE · Cloud Engineer · Developer"
 SCHOOL = "CS @ UMBC · Class of Dec 2027"
 CERT = "AWS Certified ×3"
 
 # Status Window
-JOB = "Software Engineer"
-TITLE = "One Who Runs LLMs Locally"
-GUILD = "UMBC · ex-HeadsUp (SWE Intern)"
-CURRENT_QUEST = "Building Prism, a privacy-first local LLM hub"
-PARTY = "Open to Summer 2027 SWE / AI internships"
+TITLE = "The One Who Ships Products"
+GUILD = "UMBC · Computer Science, Class of Dec 2027"
+JOB_PREFIX = "(Aspiring)"
+JOB_PATHS = ["SWE", "Cloud Engineer", "Developer"]
+JOB_PROMPT = "Job change available. Which path will you take?"
+
+
+@dataclass
+class TopStat:
+    label: str
+    value: str
+    sub: str
+    highlight: bool = False
+
+
+TOP_STATS = [
+    TopStat("CURRENT QUEST", "Building Prism", "privacy-first local LLM hub"),
+    TopStat("RAID CLEARED", "SWE Intern @ HeadsUp", "previous guild · internship"),
+    TopStat("LOOKING FOR PARTY", "Summer 2027", "SWE · Cloud · Dev internships", highlight=True),
+]
 
 LINKEDIN = ("LINKEDIN", "/in/saumya31")
 PORTFOLIO = ("PORTFOLIO", "saumya.world")

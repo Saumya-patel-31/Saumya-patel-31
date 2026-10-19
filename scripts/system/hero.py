@@ -7,12 +7,12 @@ from .theme import (DIM, GLOW, HOLO, HOLO_SOFT, ICE, INK, MUTED, SHADOW, TEXT, V
 W = 900
 
 
-def _backdrop(h, *, sky, fog):
+def _backdrop(h, *, sky, fog, fog_color=SHADOW):
     defs = (
         f'<radialGradient id="sky" cx=".5" cy="0" r=".75"><stop offset="0" stop-color="{HOLO}" stop-opacity="{sky}"/>'
         f'<stop offset="1" stop-color="{HOLO}" stop-opacity="0"/></radialGradient>'
-        f'<radialGradient id="fog" cx=".5" cy="1.05" r=".7"><stop offset="0" stop-color="{SHADOW}" stop-opacity="{fog}"/>'
-        f'<stop offset="1" stop-color="{SHADOW}" stop-opacity="0"/></radialGradient>'
+        f'<radialGradient id="fog" cx=".5" cy="1.05" r=".7"><stop offset="0" stop-color="{fog_color}" stop-opacity="{fog}"/>'
+        f'<stop offset="1" stop-color="{fog_color}" stop-opacity="0"/></radialGradient>'
         f'<clipPath id="canvas"><rect width="{W}" height="{h}" rx="16"/></clipPath>'
     )
     body = (
@@ -66,17 +66,55 @@ def render_header():
                     css=css, defs=defs)
 
 
+# 5x7 bitmap glyphs for the pixel-art ARISE.
+PIXEL_FONT = {
+    "A": [".###.", "#...#", "#...#", "#####", "#...#", "#...#", "#...#"],
+    "R": ["####.", "#...#", "#...#", "####.", "#.#..", "#..#.", "#...#"],
+    "I": ["###", ".#.", ".#.", ".#.", ".#.", ".#.", "###"],
+    "S": [".####", "#....", "#....", ".###.", "....#", "....#", "####."],
+    "E": ["#####", "#....", "#....", "####.", "#....", "#....", "#####"],
+    ".": [".", ".", ".", ".", ".", ".", "#"],
+}
+# Electric blue, light at the top to deep cobalt at the bottom, one shade per pixel row.
+ARISE_RAMP = ["#e0efff", "#bfdbfe", "#93c5fd", "#60a5fa", "#3b82f6", "#2563eb", "#1d4ed8"]
+ARISE_SHADOW = "#0b1d4f"
+ARISE_GLOW = "#3b82f6"
+
+
+def pixel_text(word, x0, y0, px, *, colors=None, color=None):
+    """Lay out `word` in PIXEL_FONT as px-sized squares."""
+    rects, x = [], x0
+    for ch in word:
+        glyph = PIXEL_FONT[ch]
+        for r, row in enumerate(glyph):
+            fill = color or colors[r]
+            for col, bit in enumerate(row):
+                if bit == "#":
+                    rects.append(f'<rect x="{x + col * px:g}" y="{y0 + r * px:g}" width="{px - 1.5:g}" '
+                                 f'height="{px - 1.5:g}" fill="{fill}"/>')
+        x += (len(glyph[0]) + 1) * px
+    return "".join(rects)
+
+
 def render_footer():
-    h = 236
-    defs, body = _backdrop(h, sky=0.05, fog=0.7)
-    defs += (
-        f'<linearGradient id="arise" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{GLOW}"/>'
-        f'<stop offset=".55" stop-color="{VIOLET}"/><stop offset="1" stop-color="{SHADOW}"/></linearGradient>'
+    h, px = 252, 20
+    word = "ARISE."
+    cols = sum(len(PIXEL_FONT[ch][0]) + 1 for ch in word) - 1
+    x0, y0 = (W - cols * px) / 2, 38
+    defs, body = _backdrop(h, sky=0.06, fog=0.55, fog_color="#1d4ed8")
+    defs += ('<filter id="arise-glow" x="-20%" y="-40%" width="140%" height="180%">'
+             '<feGaussianBlur stdDeviation="11"/></filter>')
+    body += motes(W, h, count=46, seed=11, colors=(HOLO, "#60a5fa", "#93c5fd")) + "</g>"
+
+    glow = pixel_text(word, x0, y0, px, color=ARISE_GLOW)
+    shadow = pixel_text(word, x0 + 5, y0 + 5, px, color=ARISE_SHADOW)
+    letters = pixel_text(word, x0, y0, px, colors=ARISE_RAMP)
+    body += (
+        f'<g class="arise-glow" filter="url(#arise-glow)">{glow}</g>'
+        f"<g>{shadow}</g>"
+        f"<g>{letters}</g>"
     )
-    body += motes(W, h, count=46, seed=11, colors=(VIOLET, GLOW, SHADOW)) + "</g>"
-    body += text(W / 2 + 11, 132, "ARISE.", size=88, color="url(#arise)", cls="sans arise", anchor="middle",
-                 weight=900, spacing=22, extra='filter="url(#glow-strong)"')
-    body += text(W / 2, 184, "[SYSTEM] Quest log closed. See you at the next gate.", size=13, color=MUTED,
-                 anchor="middle")
-    css = ".arise{animation:arise 4s ease-in-out infinite}@keyframes arise{50%{opacity:.78}}"
+    body += text(W / 2, y0 + 7 * px + 50, "[SYSTEM] Quest log closed. See you at the next gate.", size=13,
+                 color=MUTED, anchor="middle")
+    css = ".arise-glow{opacity:.6;animation:arise 4s ease-in-out infinite}@keyframes arise{50%{opacity:.3}}"
     return document(W, h, body, title="ARISE. Thanks for visiting.", css=css, defs=defs)

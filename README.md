@@ -5,7 +5,7 @@
 -->
 
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="[Notification] You have acquired the qualifications to be a Player. Saumya Patel: Software Engineer, AI/ML and Cloud. CS at UMBC, Class of Dec 2027. AWS Certified x3." />
+  <img src="assets/header.svg" width="100%" alt="[Notification] You have acquired the qualifications to be a Player. Saumya Patel: (Aspiring) SWE, Cloud Engineer, Developer. CS at UMBC, Class of Dec 2027. AWS Certified x3." />
 </p>
 
 <p align="center">
@@ -14,11 +14,7 @@
 </p>
 
 <p align="center">
-  <b>Now:</b> building <a href="https://github.com/Saumya-patel-31/Prism">Prism</a> · ex-SWE intern @ HeadsUp · open to <b>Summer 2027</b> internships
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Saumya-patel-31/Saumya-patel-31/output/status.svg" width="100%" alt="Status window: level, XP and live GitHub stats, refreshed every few hours." />
+  <img src="https://raw.githubusercontent.com/Saumya-patel-31/Saumya-patel-31/output/status.svg" width="100%" alt="Status window. Title: The One Who Ships Products. Current quest: building Prism. Raid cleared: SWE Intern at HeadsUp. Looking for party: Summer 2027 SWE, Cloud and Dev internships. Job: (Aspiring) SWE / Cloud Engineer / Developer. Plus level, XP and live GitHub stats." />
 </p>
 
 <p align="center">

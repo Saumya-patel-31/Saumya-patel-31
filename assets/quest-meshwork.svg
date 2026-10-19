@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="254" viewBox="0 0 450 254" role="img" aria-label="Quest: meshwork, everything you follow, one daily email. Watches jobs, GitHub, news, arXiv, Reddit and any page you pick, dedupes and ranks what's new, then mails one digest. Every link is real. Stack: JavaScript, Python, Docker."><title>Quest: meshwork, everything you follow, one daily email. Watches jobs, GitHub, news, arXiv, Reddit and any page you pick, dedupes and ranks what's new, then mails one digest. Every link is real. Stack: JavaScript, Python, Docker.</title><style>
+.mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+.corner{animation:corner-pulse 3.2s ease-in-out infinite}
+@keyframes corner-pulse{0%,100%{opacity:.55}50%{opacity:1}}
+.rise{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.fade{animation:fade .8s ease-out both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.blink{animation:blink 1.1s steps(2,jump-none) infinite}
+@keyframes blink{50%{opacity:.15}}
+.open{transform-box:fill-box;transform-origin:center;animation:open .75s cubic-bezier(.2,.9,.25,1.1) both}
+@keyframes open{0%{opacity:0;transform:scale(.55,.02)}45%{opacity:1;transform:scale(1,.02)}100%{opacity:1;transform:none}}
+.grow{transform-box:fill-box;transform-origin:left center;animation:grow 1.4s cubic-bezier(.2,.8,.2,1) .4s both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:none}}
+.mote{animation:mote linear infinite both}
+@keyframes mote{0%{opacity:0;transform:translateY(0)}15%{opacity:.9}80%{opacity:.6}100%{opacity:0;transform:translateY(var(--rise))}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.sweep-meshwork{animation:sweep-meshwork 7s linear infinite}@keyframes sweep-meshwork{from{transform:translateY(0)}to{transform:translateY(378px)}}</style><defs>
+<linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0b1a33" stop-opacity=".97"/>
+  <stop offset="1" stop-color="#060f21" stop-opacity=".98"/>
+</linearGradient>
+<linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
+  <stop offset=".85" stop-color="#38bdf8" stop-opacity=".04"/>
+  <stop offset="1" stop-color="#7dd3fc" stop-opacity=".12"/>
+</linearGradient>
+<linearGradient id="xp" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#38bdf8"/>
+  <stop offset="1" stop-color="#a855f7"/>
+</linearGradient>
+<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+  <path d="M24 0H0V24" fill="none" stroke="#1c3454" stroke-width=".6" opacity=".55"/>
+</pattern>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur stdDeviation="2.4" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="glow-strong" x="-50%" y="-80%" width="200%" height="260%">
+  <feGaussianBlur stdDeviation="7" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs><g transform="translate(8 8)"><clipPath id="clip-meshwork"><rect width="434" height="238" rx="8"/></clipPath><rect width="434" height="238" rx="8" fill="url(#panel)"/><rect width="434" height="238" rx="8" fill="url(#grid)" opacity=".5"/><g clip-path="url(#clip-meshwork)"><rect class="sweep-meshwork" y="-140" width="434" height="140" fill="url(#sweep)"/></g><rect x=".5" y=".5" width="433" height="237" rx="8" fill="none" stroke="#38bdf8" stroke-opacity=".5"/><rect x="6" y="6" width="422" height="226" rx="5" fill="none" stroke="#38bdf8" stroke-opacity=".12"/><path class="corner" d="M-3 19V-3H19M415 -3H437V19M-3 219V241H19M415 241H437V219" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="square" filter="url(#glow)"/><rect x="28" y="30.5" width="57" height="20.5" rx="3" fill="#38bdf8" fill-opacity="0.08" stroke="#38bdf8" stroke-opacity=".55"/><text x="57.25" y="46" class="mono" font-size="10.5" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">QUEST</text><path d="M386 30l22 22-22 22-22-22z" fill="#a855f7" fill-opacity=".16" stroke="#a855f7" stroke-width="1.6" filter="url(#glow)"/><text x="386" y="60" class="sans" font-size="22" fill="#e6f4ff" text-anchor="middle" font-weight="800">A</text><text x="386" y="90" class="mono" font-size="9" fill="#7f9ec2" text-anchor="middle" letter-spacing="2">RANK</text><text x="28" y="92" class="sans" font-size="26" fill="#e6f4ff" font-weight="800" letter-spacing="2">MESHWORK</text><text x="28" y="114" class="mono" font-size="12.5" fill="#7dd3fc">everything you follow, one daily email</text><path d="M28 128H406" stroke="#38bdf8" stroke-opacity="0.18"/><text x="28" y="150" class="mono" font-size="12" fill="#c3d8ef">Watches jobs, GitHub, news, arXiv, Reddit and</text><text x="28" y="168" class="mono" font-size="12" fill="#c3d8ef">any page you pick, dedupes and ranks what's</text><text x="28" y="186" class="mono" font-size="12" fill="#c3d8ef">new, then mails one digest. Every link is real.</text><rect x="28" y="194.5" width="86" height="20.5" rx="3" fill="#38bdf8" fill-opacity="0.05" stroke="#38bdf8" stroke-opacity=".55"/><text x="71.25" y="210" class="mono" font-size="10.5" fill="#c3d8ef" text-anchor="middle" letter-spacing="0.5">JavaScript</text><rect x="122" y="194.5" width="58.8" height="20.5" rx="3" fill="#38bdf8" fill-opacity="0.05" stroke="#38bdf8" stroke-opacity=".55"/><text x="151.65" y="210" class="mono" font-size="10.5" fill="#c3d8ef" text-anchor="middle" letter-spacing="0.5">Python</text><rect x="188.8" y="194.5" width="58.8" height="20.5" rx="3" fill="#38bdf8" fill-opacity="0.05" stroke="#38bdf8" stroke-opacity=".55"/><text x="218.45" y="210" class="mono" font-size="10.5" fill="#c3d8ef" text-anchor="middle" letter-spacing="0.5">Docker</text></g></svg>

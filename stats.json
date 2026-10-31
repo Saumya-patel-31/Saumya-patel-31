@@ -1,0 +1,33 @@
+{
+  "contributions_1y": 750,
+  "contributions_all": 753,
+  "active_days_1y": 127,
+  "current_streak": 29,
+  "longest_streak": 29,
+  "pull_requests": 24,
+  "repos_contributed": 15,
+  "public_repos": 13,
+  "languages": [
+    [
+      "JavaScript",
+      4
+    ],
+    [
+      "Python",
+      4
+    ],
+    [
+      "TypeScript",
+      3
+    ],
+    [
+      "Go",
+      1
+    ]
+  ],
+  "level": 19,
+  "xp": 753,
+  "xp_floor": 722,
+  "xp_next": 800,
+  "synced": "2026-10-31 05:59 UTC"
+}
